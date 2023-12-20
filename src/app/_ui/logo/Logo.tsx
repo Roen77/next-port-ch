@@ -15,7 +15,8 @@ const logo = tv({
       size: {
         sm: "text-lg",
         md: "text-base",
-        lg: "text-7xl",
+        lg2:'text-3xl',
+        lg3: "text-7xl",
       },
       bold:{
         base:'font-normal',
@@ -23,7 +24,7 @@ const logo = tv({
       }
     },
     defaultVariants: {
-      size: "lg",
+      size: "lg3",
       color: "blue",
     }
   });
@@ -41,7 +42,7 @@ const logoStyle = (style:LogoVariants) => logo({...style,...props})
 
   return (
     <div className={container()}>
-    <h1 className={logo(({bold:'semi'}))}>
+    <h1 className={logoStyle({bold:'semi'})}>
       <span className={logoStyle({color:'blue'})}>P</span>
       <span className={logoStyle({color:'red'})}>o</span>
       <span className={logoStyle({color:'yell'})}>r</span>

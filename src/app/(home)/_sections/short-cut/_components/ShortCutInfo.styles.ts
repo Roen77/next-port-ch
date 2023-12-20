@@ -5,18 +5,22 @@ const outLine = tv({
     base:"rounded-full w-[100px] h-[100px] m-auto bg-icon-gray flex justify-center items-center"
 })
 const innerLine = tv({
-    base:"bg-logo-blue w-[50px] h-[50px] rounded-full text-white flex justify-center items-center",
+    base:" w-[60px] h-[60px] rounded-full text-white flex justify-center items-center",
     variants:{
         color: {
-            blue:'bg-logo-blue',
-            red:'bg-logo-red',
-            green:'bg-logo-green',
-            yell:'bg-logo-yell'
+            default:'bg-slate-300',
+            blue:'bg-logo-blue/70',
+            red:'bg-logo-red/70',
+            green:'bg-logo-green/70',
+            yell:'bg-logo-yell/70'
         },
         size:{
             lg:'text-lg',
 
-        }
+        },
+    }
+    ,defaultVariants:{
+        color:'default'
     }
 })
 

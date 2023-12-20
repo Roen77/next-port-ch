@@ -11,19 +11,21 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="max-w-[1200px] m-auto w-full h-screen">
+      <main className="max-w-[1200px] m-auto w-full  h-screen relative">
         <section className="p-10 h-full flex justify-center items-center">
           <div>
-           <Logo />
+            <Logo />
             <div>
-            {/* search */}
-              <TypingSearch/>
+              {/* search */}
+              <div className="mt-10 pb-10">
+                <TypingSearch />
+              </div>
               {/* content */}
-                <div className="py-10 flex justify-around items-center">
-                <ShortCut/>
-                </div>
+              <div className="flex justify-around items-center relative z-[200]">
+                <ShortCut />
               </div>
             </div>
+          </div>
         </section>
       </main>
     </>

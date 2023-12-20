@@ -1,23 +1,24 @@
+import Profile from "@/app/_components/Profile/Profile";
 import Image from "next/image";
 import React from "react";
 import { tv } from "tailwind-variants";
 
 const header = tv({
   slots: {
-    base: "absolute z-50 left-0 top-0 w-full flex justify-between items-center px-12 py-2",
-    button: "hover:bg-slate-200 w-[50px] h-[50px] rounded-full flex justify-center items-center",
+    base: "absolute z-[100] left-0 top-0 w-full flex justify-between items-center px-12 py-2",
+    button: "hover:bg-slate-200 w-[50px] h-[50px] rounded-full flex justify-center items-center ",
 
   },
 });
 
-const {base,button} = header()
+const { base, button } = header()
 
 
 function Header() {
   return (
     <header className={base()}>
       <div className="left"></div>
-      <div className="left">
+      <div className="left flex justify-center items-center">
         <button className={button()}>
           <Image
             src="/menu_grid_icon.svg"
@@ -27,6 +28,9 @@ function Header() {
             priority
           />
         </button>
+        <div className="ml-3">
+          <Profile />
+        </div>
       </div>
     </header>
   );

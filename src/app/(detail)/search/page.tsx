@@ -1,12 +1,12 @@
 
-import SearchHeader from "@/app/(home)/_sections/search/SearchHeader";
+
 import Image from "next/image";
 import React from "react";
 
 function SearchPage() {
   return (
     <>
-      <SearchHeader />
+
       <main className="max-w-[1000px] m-auto w-full h-screen">
         <section className="relative p-5 h-full max-w-[800px] flex justify-start">
           <div>
