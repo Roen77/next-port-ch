@@ -17,7 +17,7 @@ function AboutMe() {
       <div>
         <TypingSearch typing='About Me' />
         {/* keyword */}
-        <div className='flex items-center pt-3 pb-6'>
+        <div className='flex items-center pt-3 pb-6 max-[464px]:flex-col max-[464px]:items-start'>
           <p className='font-bold text-lg mr-2 flex-shrink-0'>
             연관 검색어
           </p>
@@ -30,7 +30,7 @@ function AboutMe() {
             <Badge title='존중' type='default' />
           </div>
         </div>
-        <div className="text-lg">
+        <div className="text-lg max-[464px]:text-base">
           <p className="mb-4">
             <Highlight content=' 주로 React와 React Native를 사용하여 웹과 앱 서비스를 개발/운영했습니다.' />
           </p>

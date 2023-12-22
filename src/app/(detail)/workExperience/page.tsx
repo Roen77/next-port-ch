@@ -18,7 +18,7 @@ function WorkExperience() {
       <div>
         <TypingSearch typing='Work Experience' />
         {/* keyword */}
-        <div className='flex items-center pt-3 pb-6'>
+        <div className='flex items-center pt-3 pb-6 max-[464px]:flex-col max-[464px]:items-start'>
           <p className='font-bold text-lg mr-2'>
             연관 검색어
           </p>
@@ -28,7 +28,7 @@ function WorkExperience() {
             <Badge title='FrontEnd' type='default' />
           </div>
         </div>
-        <div className="text-lg">
+        <div className="text-lg max-[464px]:text-base">
           <p className="mb-4">
             <Highlight content='업무 경력을 소개합니다.' />
           </p>

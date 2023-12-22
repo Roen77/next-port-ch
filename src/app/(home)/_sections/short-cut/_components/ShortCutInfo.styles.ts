@@ -8,7 +8,7 @@ const outLine = tv({
     base:"rounded-full w-[100px] h-[100px] m-auto bg-icon-gray flex justify-center items-center max-[720px]:w-[70px] max-[720px]:h-[70px]"
 })
 const innerLine = tv({
-    base:" w-[60px] h-[60px] rounded-full text-white flex justify-center items-center",
+    base:" w-[60px] h-[60px] rounded-full text-white flex justify-center items-center ",
     variants:{
         color: {
             default:'bg-slate-300',
@@ -30,7 +30,7 @@ const innerLine = tv({
 
 
 const title = tv({
-    base:'my-2 text-center',
+    base:'my-2 text-center max-[450px]:text-sm',
     variants:{
         size:{
             sm:'text-sm',

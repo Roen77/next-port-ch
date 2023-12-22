@@ -17,7 +17,7 @@ function Skills() {
       <div>
         <TypingSearch typing='Skills' />
         {/* keyword */}
-        <div className='flex items-center pt-3 pb-6'>
+        <div className='flex items-center pt-3 pb-6 max-[464px]:flex-col max-[464px]:items-start'>
           <p className='font-bold text-lg mr-2'>
             연관 검색어
           </p>
@@ -28,7 +28,7 @@ function Skills() {
             <Badge title='BackEnd' type='default' />
           </div>
         </div>
-        <div>
+        <div className="text-lg max-[464px]:text-base">
           <p className="mb-4">
             <Highlight content='실무에서 자주 사용한 스킬과 평소 관심 있는 스킬들을 정리했습니다.' />
           </p>
