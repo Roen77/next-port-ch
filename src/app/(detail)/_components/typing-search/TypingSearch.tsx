@@ -9,7 +9,7 @@ type Props = {
 }
 function TypingSearch({ typing }: Props) {
     return (
-        <div className='absolute top-[-66px] z-[600] max-[1340px]:relative max-[1340px]:top-0 max-[464px]:text-[14px]'>
+        <div className='absolute top-[-66px] z-[600] max-[1340px]:relative max-[1340px]:top-0 max-[464px]:text-[10px]'>
             <Typing.Wrapper width={820}>
                 <Typing.Icon position="left5" >
                     <Image

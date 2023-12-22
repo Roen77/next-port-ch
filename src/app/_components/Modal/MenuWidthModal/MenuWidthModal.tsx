@@ -89,7 +89,7 @@ function MenuWidthModal({ RenderMenuItem, RenderProfileItem, modalPosition }: Pr
                     <RoundHoverButton icon={<Image src="menu_grid_icon.svg" alt='menu' width={30} height={30} />} />
                 </div>
 
-                <div className="ml-3">
+                <div className="ml-3 max-[720px]:ml-[2px]">
                     <button onClick={onShowProfileModal}>
                         <RoundedIcon bg='green'><span className='text-white'>태경</span></RoundedIcon>
                     </button>

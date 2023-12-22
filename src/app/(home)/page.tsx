@@ -14,14 +14,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="max-w-[1200px] m-auto w-full  h-screen relative">
-        <section className="p-10 max-[720px]:p-5 h-full flex justify-center items-center">
+      <div className="max-w-[1200px] m-auto w-full  min-h-screen relative">
+        <section className="p-10 max-[720px]:p-5 min-h-screen flex justify-center items-center">
           <div>
             <Logo />
             <div>
               {/* search */}
-              <div className="mt-10 pb-10 min-w-[700px] max-[720px]:min-w-[445px] max-[720px]:w-[445px] max-[720px]:text-[10px]">
-                <TypingSearch />
+              <div className="w-full flex justify-center items-center">
+                <div className="mt-10 pb-10 w-[700px]  max-[720px]:w-[445px] max-[720px]:text-[10px]  max-[450px]:w-[350px] max-[450px]:text-[8px]">
+                  <TypingSearch />
+                </div>
               </div>
               {/* content */}
               <div className="flex flex-wrap justify-around items-center relative z-[200]">

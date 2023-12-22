@@ -15,7 +15,7 @@ function Header() {
 
 
   return (
-    <div className="w-full py-2 min-w-[445px] bg-white z-[600] h-[80px]">
+    <div className="w-full py-2 min-w-[360px] bg-white z-[600] h-[80px]">
       <div className="relative max-w-[1400px] m-auto w-full h-full px-5 flex justify-between items-center">
         <div className="flex justify-center items-center relative z-[600]">
           <div className='mr-5 max-[1340px]:hidden block'>
@@ -31,7 +31,7 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div className='relative z-[100] right-0 top-0 flex justify-between items-center px-8 py-4 max-[570px]:px-4'>
+        <div className='relative z-[100] right-0 top-0 flex justify-between items-center px-8 py-4 max-[570px]:px-0'>
           <MenuWidthModal RenderMenuItem={MenuModal} RenderProfileItem={ProfileModal} />
         </div>
       </div>

@@ -6,7 +6,7 @@ import { tv } from "tailwind-variants";
 
 const header = tv({
   slots: {
-    base: "absolute z-[100] left-0 top-0 w-full flex justify-between items-center px-12 py-4",
+    base: "absolute z-[100] left-0 top-0 w-full flex justify-between items-center px-12 py-4 max-[720px]:px-4",
   },
 });
 

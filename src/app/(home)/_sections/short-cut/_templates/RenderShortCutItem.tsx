@@ -23,7 +23,7 @@ function RenderShortCutItem({ item, i, ...restProps }: Props) {
                         <ShortCutInfo.InnerIcon icon={link[i]} />
                     </ShortCutInfo.InnerLine>
                 </ShortCutInfo.OuterLine>
-                <div className=' h-[50px]'>
+                <div className='h-[50px]'>
                     <ShortCutInfo.ShortCutTitle title={item} />
                 </div>
             </ShortCutInfo.LinkWrapper>

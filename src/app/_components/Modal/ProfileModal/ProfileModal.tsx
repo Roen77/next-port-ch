@@ -15,7 +15,7 @@ function ProfileModal({ onClose }: Props) {
     }
     return (
         <HeaderPopupModal>
-            <div className='p-5 min-w-[400px]  min-h-[500px] rounded-2xl bg-[#EAEEF5]' >
+            <div className='p-5 min-w-[350px]  min-h-[500px] rounded-2xl bg-[#EAEEF5]' >
                 <div className='absolute right-3 top-3' onClick={onClose}>
                     <RoundHoverButton icon={<Image src="xIcon.svg" width={30} height={30} alt='x' />} />
                 </div>

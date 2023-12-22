@@ -25,7 +25,7 @@ function TypingSearch() {
         // },
       ]} />
       <Typing.Icon state='ab' position="right5" >
-        <div className="px-3">
+        <div className="px-3 max-[450px]:px-0">
           <Image
             src="/googlemic_clr_24px.svg"
             alt="googlemic_clr icon"

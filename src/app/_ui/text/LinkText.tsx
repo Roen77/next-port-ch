@@ -7,7 +7,7 @@ type Props = {
 function LinkText({ link, title }: Props) {
     return (
         <a href={link}
-            className='border-b-2 inline-flex items-end  text-content relative z-[700]'
+            className='border-b-2 inline-flex items-end  text-content relative z-[600]'
             target="_blank"
             rel="noopener noreferrer" >
             {title}

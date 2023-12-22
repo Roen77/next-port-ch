@@ -5,7 +5,7 @@ const linkWrapper = tv({
 
 })
 const outLine = tv({
-    base:"rounded-full w-[100px] h-[100px] m-auto bg-icon-gray flex justify-center items-center"
+    base:"rounded-full w-[100px] h-[100px] m-auto bg-icon-gray flex justify-center items-center max-[720px]:w-[70px] max-[720px]:h-[70px]"
 })
 const innerLine = tv({
     base:" w-[60px] h-[60px] rounded-full text-white flex justify-center items-center",
