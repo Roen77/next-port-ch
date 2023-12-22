@@ -3,6 +3,9 @@ import AboutMeRightMenu from './_sections/right-menu/RightMenu'
 import ContentBox from './_sections/content/ContentBox'
 import ContentWithIcon from './_sections/content/ContentWithImage'
 import Highlight from '@/app/_ui/highlight/Highlight'
+import TypingSearch from '../_components/typing-search/TypingSearch'
+import ShortCutInfo from '@/app/(home)/_sections/short-cut/_components/ShortCutInfo'
+import Badge from '@/app/_ui/badge/Badge'
 
 
 
@@ -12,7 +15,20 @@ function AboutMe() {
   return (
     <>
       <div>
-        <div>
+        <TypingSearch typing='About Me' />
+        {/* keyword */}
+        <div className='flex items-center pt-3 pb-6'>
+          <p className='font-bold text-lg mr-2 flex-shrink-0'>
+            연관 검색어
+          </p>
+          <div className='flex flex-wrap'>
+            <Badge title='적극성' type='default' />
+            <Badge title='성실성' type='default' />
+            <Badge title='책임감' type='default' />
+            <Badge title='커뮤니케이션 능력' type='default' />
+            <Badge title='열린 마음' type='default' />
+            <Badge title='존중' type='default' />
+          </div>
         </div>
         <div className="text-lg">
           <p className="mb-4">
@@ -38,7 +54,8 @@ function AboutMe() {
         {/* bottom */}
         <div className="bg-dot h-[1px] my-7 w-full"></div>
         {/* mark */}
-        <ContentWithIcon title='동료에게 나는?' icon={<div>ICON</div>} />
+        <ContentWithIcon title='동료에게 나는?' icon={
+          <ShortCutInfo.InnerIcon width={24} height={24} icon='aboutMe' />} />
         {/* box */}
         <ContentBox title='사용자 경험을 생각하는 동료에요!' renderContent="사용자가 제일 먼저 접하는 화면을 개발하는 일이기 때문에 화면의 UI 같은 디자인 요소뿐만 아니라 애플리케이션의 반응성을 고려하여,
         더 나은 사용자 경험을 제공하도록 고민합니다."/>

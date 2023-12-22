@@ -1,7 +1,7 @@
 import React from 'react'
 
 type ListProps = {
-    content: string;
+    content: React.ReactNode
     children?: React.ReactNode
 }
 

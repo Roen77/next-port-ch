@@ -1,17 +1,17 @@
 import React from 'react'
 
 type Props = {
-    title:string;
-    renderContent:React.ReactNode
+  title: React.ReactNode
+  renderContent: React.ReactNode
 }
-function ContentBox({title,renderContent}:Props) {
+function ContentBox({ title, renderContent }: Props) {
   return (
-    <div className="pr-10 pt-5">
+    <div className="pr-10 pt-5  max-[570px]:pr-5">
       <h3 className="text-2xl text-content">
         {title}
       </h3>
       <p className="py-3">
-       {renderContent}
+        {renderContent}
       </p>
     </div>
   )

@@ -1,37 +1,23 @@
-import Profile from "@/app/_components/Profile/Profile";
-import Image from "next/image";
+import MenuModal from "@/app/_components/Modal/MenuModal/MenuModal";
+import MenuWidthModal from "@/app/_components/Modal/MenuWidthModal/MenuWidthModal";
+import { ProfileModal } from "@/app/_components/Modal/ProfileModal";
 import React from "react";
 import { tv } from "tailwind-variants";
 
 const header = tv({
   slots: {
-    base: "absolute z-[100] left-0 top-0 w-full flex justify-between items-center px-12 py-2",
-    button: "hover:bg-slate-200 w-[50px] h-[50px] rounded-full flex justify-center items-center ",
-
+    base: "absolute z-[100] left-0 top-0 w-full flex justify-between items-center px-12 py-4",
   },
 });
 
-const { base, button } = header()
+const { base } = header()
 
 
 function Header() {
   return (
     <header className={base()}>
       <div className="left"></div>
-      <div className="left flex justify-center items-center">
-        <button className={button()}>
-          <Image
-            src="/menu_grid_icon.svg"
-            alt="menu icon"
-            width={26}
-            height={28}
-            priority
-          />
-        </button>
-        <div className="ml-3">
-          <Profile />
-        </div>
-      </div>
+      <MenuWidthModal RenderMenuItem={MenuModal} RenderProfileItem={ProfileModal} />
     </header>
   );
 }

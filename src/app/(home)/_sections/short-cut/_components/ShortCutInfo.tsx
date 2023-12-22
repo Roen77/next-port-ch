@@ -10,22 +10,30 @@ export type InnerLineColorProps = Pick<VariantProps<typeof shortCutStyle.innerLi
 type Props = {
   children: React.ReactNode
 }
-type LinkProps = {
+interface LinkProps extends VariantProps<typeof shortCutStyle.linkWrapper> {
   children: React.ReactNode
   link: string
 }
-type InnerLineProps = {
-  title: string;
-  color: InnerLineColorProps;
-  icon: string;
+interface InnerLineProps extends VariantProps<typeof shortCutStyle.innerLine> {
+  children: React.ReactNode
+
 }
-type ShortCutTitleProps = {
+
+interface InnerIconProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  icon: string;
+  width?: number;
+  height?: number;
+}
+
+interface ShortCutTitleProps extends VariantProps<typeof shortCutStyle.title> {
   title: string;
 
 }
 
 function LinkWrapper({ link, children }: LinkProps) {
-  return <Link href={`${link}`}>{children}</Link>
+  return <Link className={shortCutStyle.linkWrapper()} href={`${link}`}>{children}</Link>
+
+
 
 }
 
@@ -35,13 +43,17 @@ function OuterLine({ children }: Props) {
   </div>
 
 }
-function InnerLine({ icon, color }: InnerLineProps) {
-  return <span className={shortCutStyle.innerLine({ color })}>
-    <Image src={`${icon}.svg`} width={35} height={35} alt={icon as string} /></span>
+function InnerLine({ children, color, size }: InnerLineProps) {
+  return <span className={shortCutStyle.innerLine({ color, size })}>
+    {children}</span>
 }
-function ShortCutTitle({ title }: ShortCutTitleProps) {
+
+function InnerIcon({ icon, width = 30, height = 30, ...props }: InnerIconProps) {
+  return <Image src={`${icon}.svg`} width={width} height={height} {...props} alt={icon as string} priority />
+}
+function ShortCutTitle({ title, size }: ShortCutTitleProps) {
   return (
-    <p className="my-2 text-lg text-center">{title}</p>
+    <p className={shortCutStyle.title({ size })}>{title}</p>
   )
 }
 
@@ -49,7 +61,8 @@ const ShortCutInfo = {
   LinkWrapper,
   OuterLine,
   InnerLine,
-  ShortCutTitle
+  ShortCutTitle,
+  InnerIcon
 }
 
 export default ShortCutInfo

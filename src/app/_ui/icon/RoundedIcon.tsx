@@ -4,7 +4,7 @@ import { VariantProps, tv } from 'tailwind-variants'
 
 
 const roundedIcon = tv({
-    base: 'bg-orange-300 flex justify-center items-center',
+    base: 'flex justify-center items-center',
     variants: {
         round: {
             md: 'rounded-md',
@@ -13,15 +13,18 @@ const roundedIcon = tv({
         size: {
             sm: "w-[20px] h-[20px]",
             md: "w-[40px] h-[40px]",
+            lg: "w-[80px] h-[80px]",
         },
         bg: {
-            green: 'bg-[#02897B]'
+            green: 'bg-[#02897B]',
+            gray: 'bg-slate-300'
         },
 
     },
     defaultVariants: {
         round: 'full',
-        size: 'md'
+        size: 'md',
+        bg: 'gray'
     }
 })
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { VariantProps, tv } from "tailwind-variants";
 
 const inputWrapper = tv({
-  base: 'border-gray border-[1px] rounded-[44px] pl-14 pr-10 py-1 leading-10 shadow-3xl relative',
+  base: 'border-gray border-[1px] rounded-[44px] pl-14 pr-10 py-1 leading-10 shadow-3xl relative max-[1340px]:w-full',
   variants: {
     width: {
       700: 'w-[700px]',

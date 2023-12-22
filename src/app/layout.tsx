@@ -1,8 +1,11 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { Noto_Sans_KR } from "next/font/google";
+import { useEffect, useState } from "react";
+import Router from "next/router";
 
 const notoSans = Noto_Sans_KR({
   weight: ["400", "700"],
@@ -37,6 +40,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="ko">
       <body className={notoSans.className}>{children}</body>

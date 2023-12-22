@@ -5,7 +5,7 @@ type WrapperProps = {
     children: React.ReactNode
 }
 type LiProps = {
-    content: string;
+    content: React.ReactNode
 }
 function Wrapper({ children }: WrapperProps) {
     return <ul className="ml-5 space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">{children}</ul>

@@ -1,58 +1,38 @@
 "use client"
+import MenuModal from '@/app/_components/Modal/MenuModal/MenuModal';
+import MenuWidthModal from '@/app/_components/Modal/MenuWidthModal/MenuWidthModal';
+import { ProfileModal } from '@/app/_components/Modal/ProfileModal';
 import Typing from '@/app/_components/TypingInput/TypingInput';
 import Logo from '@/app/_ui/logo/Logo';
 import TypingAnimation from '@/app/_ui/typing/TypingAnimation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 function Header() {
-  const pathname = usePathname()
+
+
   return (
-    <div className="w-full py-5 bg-white">
-      <div className="relative max-w-[1400px] m-auto w-full px-5 flex justify-between items-end">
-        <div className="flex justify-center items-center">
-          <div className='mr-5'>
+    <div className="w-full py-2 min-w-[445px] bg-white z-[600] h-[80px]">
+      <div className="relative max-w-[1400px] m-auto w-full h-full px-5 flex justify-between items-center">
+        <div className="flex justify-center items-center relative z-[600]">
+          <div className='mr-5 max-[1340px]:hidden block'>
             <Link href="/">
               <Logo size='lg2' bold='base' />
             </Link>
           </div>
-          <Typing.Wrapper width={820}>
-            <Typing.Icon position="left5" >
-              <Image
-                src="/icon_search.svg"
-                alt="search icon"
-                width={24}
-                height={24}
-                priority
-              />
-            </Typing.Icon>
-            <TypingAnimation sequence={[
-              pathname.split('/')[1],
-              1000, // Waits 1s
-
-            ]} />
-            <Typing.Icon state='ab' position="right5" >
-              <div className="px-3">
-                <Image
-                  src="/googlemic_clr_24px.svg"
-                  alt="googlemic_clr icon"
-                  width={26}
-                  height={24}
-                  priority
-                />
-              </div>
-              <Image
-                src="/lens_icon.svg"
-                alt="lens icon"
-                width={26}
-                height={24}
-                priority
-              />
-            </Typing.Icon>
-          </Typing.Wrapper>
+        </div>
+        <div className="max-[1340px]:block hidden absolute left-0 top-0 w-full h-[60px]">
+          <div className='h-full flex justify-center items-center'>
+            <Link href="/">
+              <Logo size='lg2' bold='base' />
+            </Link>
+          </div>
+        </div>
+        <div className='relative z-[100] right-0 top-0 flex justify-between items-center px-8 py-4 max-[570px]:px-4'>
+          <MenuWidthModal RenderMenuItem={MenuModal} RenderProfileItem={ProfileModal} />
         </div>
       </div>
     </div>
