@@ -77,7 +77,7 @@ function WorkExperience() {
                 </div>
                 <div className='pb-5'>
                   <TimLineInfo.InnerBox>
-                    <TimLineInfo.Title title='기술 스택' />
+                    <TimLineInfo.Title title='기술 스택&협업 툴' />
                     <div className='flex flex-wrap'>
                       <Badge title='Typescript' type='gray' size='base' />
                       <Badge title='React Native' type='gray' size='base' />
@@ -150,7 +150,7 @@ function WorkExperience() {
                 </div>
                 <div className='pb-5'>
                   <TimLineInfo.InnerBox>
-                    <TimLineInfo.Title title='기술 스택' />
+                    <TimLineInfo.Title title='기술 스택&협업 툴' />
                     <div className='flex flex-wrap'>
                       <Badge title='Typescript' type='gray' size='base' />
                       <Badge title='React' type='gray' size='base' />
@@ -221,13 +221,13 @@ function WorkExperience() {
                 </div>
                 <div className='pb-5'>
                   <TimLineInfo.InnerBox>
-                    <TimLineInfo.Title title='기술 스택' />
+                    <TimLineInfo.Title title='기술 스택&협업 툴' />
                     <div className='flex flex-wrap'>
                       <Badge title='Javascript' type='gray' size='base' />
                       <Badge title='Typescript' type='gray' size='base' />
                       <Badge title='Jquery' type='gray' size='base' />
                       <Badge title='React Native' type='gray' size='base' />
-                      <Badge title='React Saga' type='gray' size='base' />
+                      <Badge title='Redux Saga' type='gray' size='base' />
                       <Badge title='Figma' type='gray' size='base' />
                       <Badge title='Bitbuckit' type='gray' size='base' />
                     </div>
