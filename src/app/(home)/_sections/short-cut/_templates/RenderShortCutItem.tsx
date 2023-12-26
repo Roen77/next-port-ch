@@ -16,7 +16,7 @@ function RenderShortCutItem({ item, i, ...restProps }: Props) {
     const { color, link } = restProps as RestProps;
 
     return (
-        <div key={i} className=" basis-1/4 max-[720px]:basis-1/2 relative">
+        <div key={i} className=" basis-1/4 max-[720px]:basis-1/3 relative">
             <ShortCutInfo.LinkWrapper link={link[i]}>
                 <ShortCutInfo.OuterLine>
                     <ShortCutInfo.InnerLine color={color[i] as InnerLineColorProps} >

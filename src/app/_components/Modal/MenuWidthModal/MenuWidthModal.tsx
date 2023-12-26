@@ -86,7 +86,7 @@ function MenuWidthModal({ RenderMenuItem, RenderProfileItem, modalPosition }: Pr
         <>
             <div className="flex justify-center items-center relative profile z-[600]">
                 <div onClick={onShowMenuModal}>
-                    <RoundHoverButton icon={<Image src="menu_grid_icon.svg" alt='menu' width={30} height={30} />} />
+                    <RoundHoverButton icon={<Image src="menu_grid_icon.svg" alt='menu' width={30} height={30} priority />} />
                 </div>
 
                 <div className="ml-3 max-[720px]:ml-[2px]">

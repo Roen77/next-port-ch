@@ -31,9 +31,9 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div className='relative z-[100] right-0 top-0 flex justify-between items-center px-8 py-4 max-[570px]:px-0'>
-          <MenuWidthModal RenderMenuItem={MenuModal} RenderProfileItem={ProfileModal} />
-        </div>
+      </div>
+      <div className='absolute  z-[100] right-[2px] top-0 flex justify-between items-center px-8 py-4 max-[570px]:px-0'>
+        <MenuWidthModal RenderMenuItem={MenuModal} RenderProfileItem={ProfileModal} />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Header />
       <div className="max-w-[1200px] m-auto w-full  min-h-screen relative">
-        <section className="p-10 max-[720px]:p-5 min-h-screen flex justify-center items-center">
+        <section className="px-10 max-[720px]:p-5 min-h-screen flex justify-center items-center py-24">
           <div>
             <Logo />
             <div>

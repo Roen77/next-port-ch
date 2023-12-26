@@ -3,9 +3,9 @@ import React from 'react'
 import RenderShortCutItem from './_templates/RenderShortCutItem'
 
 
-const menu = ['About Me', 'Work Experience', 'Projects', 'Skills']
-const color = ['blue', 'red', 'yell', 'green']
-const link = ['aboutMe', 'workExperience', 'projects', 'skills']
+const menu = ['About Me', 'Work Experience', 'Skills']
+const color = ['blue', 'red', 'green']
+const link = ['aboutMe', 'workExperience', 'skills']
 
 function ShortCut() {
   return (

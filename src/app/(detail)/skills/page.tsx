@@ -13,8 +13,7 @@ import AboutMeRightMenu from '../aboutMe/_sections/right-menu/RightMenu'
 function Skills() {
   return (
     <>
-
-      <div>
+      <div className='w-full'>
         <TypingSearch typing='Skills' />
         {/* keyword */}
         <div className='flex items-center pt-3 pb-6 max-[464px]:flex-col max-[464px]:items-start'>
@@ -26,6 +25,7 @@ function Skills() {
             <Badge title='React Native' type='default' />
             <Badge title='FrontEnd' type='default' />
             <Badge title='BackEnd' type='default' />
+            <Badge title='Data' type='default' />
           </div>
         </div>
         <div className="text-lg max-[464px]:text-base">
@@ -48,14 +48,21 @@ function Skills() {
             </div>
             <p className='pl-5'>해당 기술을 통해 프로젝트를 개발/배포해본 경험이 있어요.</p>
           </div>
+          <div className='flex  items-center'>
+            <div className="flex items-center justify-center">
+              <Star />
+              <Star color='gray' />
+              <Star color='gray' />
+            </div>
+            <p className='pl-5'>해당 기술에 관심이 있어요.</p>
+          </div>
         </div>
         {/* bottom */}
         <div className="bg-dot h-[1px] my-7 w-full"></div>
         {/* mark */}
         <ContentWithIcon title='어떤 스킬을 사용하나요?' icon={<ShortCutInfo.InnerIcon width={24} height={24} icon='skills' />} />
         {/* box */}
-        <ContentBox title='Front-End' renderContent="사용자가 제일 먼저 접하는 화면을 개발하는 일이기 때문에 화면의 UI 같은 디자인 요소뿐만 아니라 애플리케이션의 반응성을 고려하여,
-      더 나은 사용자 경험을 제공하도록 고민합니다."/>
+        <ContentBox title='Front-End' renderContent="" />
         <div className="relative w-full">
           <table className="text-sm text-left w-full rtl:text-right text-gray-500 dark:text-gray-400">
             <colgroup>
@@ -82,7 +89,7 @@ function Skills() {
                   JavaScript
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lan' />
+                  <Badge title='language' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -97,7 +104,7 @@ function Skills() {
                   TypeScript
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lan' />
+                  <Badge title='language' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -112,7 +119,7 @@ function Skills() {
                   React
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -127,7 +134,7 @@ function Skills() {
                   React Native
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -142,7 +149,7 @@ function Skills() {
                   Next.js
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -157,7 +164,7 @@ function Skills() {
                   Vue.js
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -172,7 +179,7 @@ function Skills() {
                   Nuxt.js
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -245,7 +252,7 @@ function Skills() {
               </tr>
               <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th scope="row" className="px-6 max-[530px]:px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  recoil
+                  Recoil
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <Badge title='state' type='Indigo' />
@@ -261,9 +268,7 @@ function Skills() {
             </tbody>
           </table>
         </div>
-        <ContentBox title='Back-End' renderContent=" 클라이언트에서 API 통신을 통해 데이터를 다루는 일이 많은
-                  만큼 서버의 부하를 줄이고, 불필요한 네트워크 비용을 줄이기
-                  위해 고민합니다."/>
+        <div className='pt-8'> <ContentBox title='Back-End' renderContent="" /></div>
         <div className="relative">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <colgroup>
@@ -291,7 +296,7 @@ function Skills() {
                   Express.js
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='lib&framework' type='red' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -304,7 +309,8 @@ function Skills() {
             </tbody>
           </table>
         </div>
-        <ContentBox title='Data' renderContent="다양한 직군의 팀원들과 협업하며 비즈니스 성장을 위한 시너지 효과를 최대치로 발휘할 수 있도록 고민합니다." />
+        <div className='pt-8'>
+          <ContentBox title='Data' renderContent="" /></div>
         <div className="relative ">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <colgroup>
@@ -331,7 +337,7 @@ function Skills() {
                   Google Analytics
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='data' type='yellow' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -346,7 +352,7 @@ function Skills() {
                   GTM
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='data' type='yellow' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">
@@ -359,8 +365,8 @@ function Skills() {
             </tbody>
           </table>
         </div>
-        <ContentBox title='Etc' renderContent="파이썬의 간편한 기능에 놀라며 1초에 1억번" />
-        <div className="relative ">
+        <div className='pt-8'><ContentBox title='Etc' renderContent="" /></div>
+        <div className="relative pb-10">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <colgroup>
               <col className='w-[200px] max-[530px]:w-[70px]' />
@@ -386,7 +392,7 @@ function Skills() {
                   python
                 </th>
                 <td className="px-6 max-[530px]:px-1 py-4">
-                  <Badge title='lib' type='red' />
+                  <Badge title='language' />
                 </td>
                 <td className="px-6 max-[530px]:px-1 py-4">
                   <div className="flex items-center">

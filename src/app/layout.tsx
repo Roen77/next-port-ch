@@ -1,11 +1,9 @@
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Head from 'next/head'
 import { Noto_Sans_KR } from "next/font/google";
-import { useEffect, useState } from "react";
-import Router from "next/router";
+
 
 const notoSans = Noto_Sans_KR({
   weight: ["400", "700"],
@@ -20,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "프론트 엔지니어 Roen의 포트폴리오",
     description: "프론트 엔지니어 Roen의 포트폴리오 사이트입니다.",
-    url: "https://silly-gecko-1a0c40.netlify.app/",
+    url: "https://boisterous-beijinho-b4f8fc.netlify.app",
     siteName: "프론트 엔지니어 Roen의 포트폴리오",
     images: [
       {

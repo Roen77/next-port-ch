@@ -23,7 +23,7 @@ function RenderContentItem({ item }: Props) {
                 </span>
                 <div className="flex items-center relative w-full text-left text-black ">
                     <RoundedIcon >
-                        <Image src={`${item.linkTitle || item.title}.svg`} width={20} height={20} alt={item.title} />
+                        <Image src={`${item.linkTitle || item.title}.svg`} width={20} height={20} alt={item.title} priority />
                     </RoundedIcon>
                     <p className='ml-3 text-sm'>{item.title}</p>
                 </div>
