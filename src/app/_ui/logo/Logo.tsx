@@ -42,7 +42,7 @@ interface Props extends LogoVariants {
 function Logo(props: Props) {
 
   const logoStyle = (style: LogoVariants) => logo({ ...style, ...props })
-
+  // portfolio
   return (
     <div className={container()}>
       <h1 className={logoStyle({ bold: 'semi' })}>
@@ -50,7 +50,7 @@ function Logo(props: Props) {
         <span className={logoStyle({ color: 'red' })}>o</span>
         <span className={logoStyle({ color: 'yell' })}>r</span>
         <span className={logoStyle({ color: 'green' })}>t</span>
-        <span className={logoStyle({ color: 'red' })}>p</span>
+        <span className={logoStyle({ color: 'red' })}>f</span>
         <span className={logoStyle({ color: 'yell' })}>o</span>
         <span className={logoStyle({ color: 'blue' })}>l</span>
         <span className={logoStyle({ color: 'green' })}>i</span>
