@@ -22,12 +22,23 @@ function AboutMe() {
             연관 검색어
           </p>
           <div className='flex flex-wrap'>
-            <Badge title='적극성' type='default' />
+            <Badge title='TypeScript' type='default' />
+            <Badge title='Javascript' type='default' />
+            <Badge title='Jquery' type='default' />
+            <Badge title='React' type='default' />
+            <Badge title='React Native' type='default' />
+            <Badge title='Redux' type='default' />
+            <Badge title='RestAPI' type='default' />
+            <Badge title='Vue.js' type='default' />
+            <Badge title='Next.js' type='default' />
+            <Badge title='사교성' type='default' />
             <Badge title='성실성' type='default' />
+            <Badge title='의사소통' type='default' />
+            <Badge title='열정' type='default' />
+            <Badge title='자기개발' type='default' />
+            <Badge title='자기개발' type='default' />
             <Badge title='책임감' type='default' />
-            <Badge title='커뮤니케이션 능력' type='default' />
-            <Badge title='열린 마음' type='default' />
-            <Badge title='존중' type='default' />
+            <Badge title='협동심' type='default' />
           </div>
         </div>
         <div className="text-lg max-[464px]:text-base">
