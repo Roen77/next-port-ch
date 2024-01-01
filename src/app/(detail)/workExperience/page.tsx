@@ -93,7 +93,7 @@ function WorkExperience() {
                 <TimLineInfo.InnerBox>
                   <TimLineInfo.Title title='목표' />
                   <UlList.Wrapper>
-                    <UlList.LiWidthIcon content="업무 일정을 효율적으로 관리하기 위해 무엇을 해야 하는가" />
+                    <UlList.LiWidthIcon content="업무 프로세스 흐름을 효율적으로 파악하고 관리하기 위해 무엇을 해야 하는가" />
                     <UlList.LiWidthIcon content="기존에 부족한 이미지 업로드 성능과 스크롤 애니메이션 성능을 어떻게 개선해야 하는가" />
                   </UlList.Wrapper>
                 </TimLineInfo.InnerBox>
@@ -139,9 +139,9 @@ function WorkExperience() {
                   <TimLineInfo.InnerBox>
                     <TimLineInfo.Title title='목표 달성' />
                     <UlList.Wrapper>
-                      <UlList.LiWidthIcon content='업무 일정을 효율적으로 관리하기 위해 무엇을 했는가' >
+                      <UlList.LiWidthIcon content='업무 프로세스 흐름을 효율적으로 파악하고 관리하기 위해 무엇을 했는가' >
                         <SubUlList.Wrapper>
-                          <SubUlList.LiWidthDot content='업무 흐름을 파악하기 위해 업무 프로세스 문서 양식을 만들어 공유했다.' />
+                          <SubUlList.LiWidthDot content='개선된 업무 프로세스를 공유하여 효율적인 스케줄 관리로 업무능률을 향상시켰다.' />
                           <SubUlList.LiWidthDot content='빠른 실무 투입을 위해 기존에 사용하던 협업 툴의 기능을 최대한 활용하도록 제안하고, 사용했다.' />
                         </SubUlList.Wrapper>
                       </UlList.LiWidthIcon>
@@ -225,7 +225,7 @@ function WorkExperience() {
                   <TimLineInfo.InnerBox>
                     <TimLineInfo.Title title='목표 달성' />
                     <UlList.Wrapper>
-                      <UlList.LiWidthIcon content='비슷한 형태의 디자인이 많은 경우, 어떻게 컴포넌트를 재사용했나' >
+                      <UlList.LiWidthIcon content='스타일링의 유연성을 높이고, 좋은 컴포넌트를 설계하기 위해 무엇을 했나' >
                         <SubUlList.Wrapper>
                           <SubUlList.LiWidthDot content='스타일 정의에 대한 역할을 위임받아 직접 기획 의도대로 디자인할 수 있도록 Haedless UI 컴포넌트를 적용했다.' />
                           <SubUlList.LiWidthDot content='작은 기능들은 아토믹 디자인을 채용하여 나누고, 합성하는 방식으로 컴포넌트의 재사용성을 높였다.' />
@@ -283,7 +283,7 @@ function WorkExperience() {
                   <TimLineInfo.InnerBox>
                     <TimLineInfo.Title title='목표' />
                     <UlList.Wrapper>
-                      <UlList.LiWidthIcon content="최대한 많은 사용자가 불편함 없도록 어떻게 서비스를 제공할 것인가" />
+                      <UlList.LiWidthIcon content="최대한 많은 사용자가 불편함이 없도록 어떻게 서비스를 제공할 것인가" />
                     </UlList.Wrapper>
                   </TimLineInfo.InnerBox>
                 </div>
@@ -319,7 +319,7 @@ function WorkExperience() {
                   <TimLineInfo.InnerBox>
                     <TimLineInfo.Title title='목표 달성' />
                     <UlList.Wrapper>
-                      <UlList.LiWidthIcon content='최대한 많은 사용자가 불편함 없도록 어떻게 서비스를 제공했나' >
+                      <UlList.LiWidthIcon content='최대한 많은 사용자가 불편함이 없도록 어떻게 서비스를 제공했나' >
                         <SubUlList.Wrapper>
                           <SubUlList.LiWidthDot content="서비스의 목적에 맞춰 타깃이 되는 브라우저를 테스트하고, 동일한 동작에 대해 동일한 기능을 제공하도록 브라우저의 호환성을 보장하고 사용자 접근성을 개선했다." />
                         </SubUlList.Wrapper>
